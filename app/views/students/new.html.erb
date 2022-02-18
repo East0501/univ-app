@@ -1,0 +1,19 @@
+<div class="container">
+
+  <h1>Sign up</h1>
+
+  <%= form_with model: @student do |f| %>
+    <div class="mb-3 col-6">
+      <%= f.label :name, calss: "form-label"%>
+      <%= f.text_field :name, placeholder: "Enter your full name",autofocus: true, class: "form-control" %>
+    </div>
+
+    <div class="mb-3 col-6">
+      <%= f.label :email, calss: "form-label"%>
+      <%= f.text_field :email, placeholder: "Enter your email", class: "form-control" %>
+    </div>
+
+    <%= f.submit 'Sign up', data: { turbo_confirm: 'Are you sure?' }, class: "btn btn-primary" %>
+  <% end %>
+</div>
+

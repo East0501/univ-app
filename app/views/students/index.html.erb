@@ -1,0 +1,15 @@
+<h1>Students listing</h1>
+
+<div class="d-grid gap-3">
+<% @students.each do |student| %>
+    <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Name: <%= student.name %></h5>
+          <p class="card-title">Email: <%= student.email %></p>
+          <p>Course Enrollments: None</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+  <% end %>
+  </div>
